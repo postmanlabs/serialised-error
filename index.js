@@ -23,8 +23,4 @@ SerialisedError = function (err, decorate) {
     }
 };
 
-SerialisedError.prototype.toJSON = function () {
-    return JSON.stringify(this);
-};
-
 module.exports = SerialisedError;
