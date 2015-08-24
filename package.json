@@ -1,6 +1,6 @@
 {
   "name": "serialised-error",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Serialises error object to normal object",
   "main": "index.js",
   "scripts": {
@@ -26,5 +26,10 @@
     "expect.js": "^0.3.1",
     "jshint": "^2.8.0",
     "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "node-uuid": "^1.4.3",
+    "object-hash": "^0.8.0",
+    "stack-trace": "0.0.9"
   }
 }
