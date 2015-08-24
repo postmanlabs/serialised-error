@@ -19,4 +19,12 @@ describe('serialised error', function () {
 
         expect(Object.keys(error)).to.eql(['name', 'message', 'stack', 'extra']);
     });
+
+    it('must add error meta when specified', function () {
+        var error = SerialisedError(new Error('Error Name'), true);
+        error.extra = 'Extra Property';
+
+        expect(Object.keys(error)).to.eql(['name', 'message', 'stack', 'checksum', 'id', 'timestamp', 'stacktrace',
+            'extra']);
+    });
 });
