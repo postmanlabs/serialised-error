@@ -1,0 +1,30 @@
+{
+  "name": "serialised-error",
+  "version": "1.0.0",
+  "description": "Serialises error object to normal object",
+  "main": "index.js",
+  "scripts": {
+    "test": "jshint index.js && mocha tests"
+  },
+  "author": "Postman Labs <help@getpostman.com>",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/postmanlabs/serialised-error.git"
+  },
+  "bugs": {
+    "url": "https://github.com/postmanlabs/serialised-error/issues"
+  },
+  "homepage": "https://github.com/postmanlabs/serialised-error",
+  "keywords": [
+    "serialise",
+    "error",
+    "string",
+    "json"
+  ],
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "jshint": "^2.8.0",
+    "mocha": "^2.2.5"
+  }
+}
