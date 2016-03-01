@@ -1,4 +1,4 @@
-# Serialise Error
+# Serialised Error
 
 This module attempts to convert an error object into a regular JavaScript object. This is useful if an error object has
 to be stored and operated upon.
@@ -23,12 +23,16 @@ console.log(JSON.parse(serialisedError));
 
 ## Adding additional meta information to error
 
-Passing a second argument as `true` to the SerialisedError constructor adds the following keys to the object
-- checksum: a SHA1 checksum of the error that is constant for same name, message and stack
-- id: a random UID of the error
-- timestamp: the time when the error was raised
-- timestampISO: the time in ISO format
-- stacktrace: a prettified array of stack traces
+Passing a second argument as `true` to the `SerialisedError` constructor adds the following keys to the serialised object.
+
+| Property        | Description |
+| --------------- | ----------- |
+| `checksum`      | a `SHA1` checksum of the error that is constant for same name, message and stack |
+| `id`            | a random `UUID` (v4) of the error |
+| `timestamp`     | the time when the error was serialised |
+| `timestampISO`  | the time (in ISO format) when the error was serialised |
+| `stacktrace`    | a prettified array of stack traces |
+
 
 ## Installation
 
