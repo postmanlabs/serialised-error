@@ -27,6 +27,7 @@ Passing a second argument as `true` to the SerialisedError constructor adds the 
 - checksum: a SHA1 checksum of the error that is constant for same name, message and stack
 - id: a random UID of the error
 - timestamp: the time when the error was raised
+- timestampISO: the time in ISO format
 - stacktrace: a prettified array of stack traces
 
 ## Installation
