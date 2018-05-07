@@ -1,6 +1,6 @@
 var stacktrace = require('stack-trace'),
     hash = require('object-hash'),
-    uuid = require('node-uuid'),
+    uuid = require('uuid'),
     SerialisedError;
 
 SerialisedError = function (err, decorate) {
