@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "object-hash": "^1.1.2",
-    "stack-trace": "0.0.9",
+    "stack-trace": "0.0.10",
     "uuid": "^3.0.0"
   }
 }
