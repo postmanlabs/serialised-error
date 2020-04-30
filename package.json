@@ -4,7 +4,9 @@
   "description": "Serialises error object to normal object",
   "main": "index.js",
   "scripts": {
-    "test": "jshint index.js && mocha tests"
+    "test": "jshint index.js && mocha tests",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Postman Labs <help@getpostman.com>",
   "license": "Apache-2.0",
@@ -30,6 +32,8 @@
   "dependencies": {
     "object-hash": "^1.1.2",
     "stack-trace": "0.0.9",
-    "uuid": "^3.0.0"
-  }
+    "uuid": "^3.0.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
