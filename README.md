@@ -15,7 +15,7 @@ var someError = new Error("This is a test error");
 var serialisedError = new SerialisedError(someError);
 
 // convert the serialised error to JSON
-console.log(JSON.parse(serialisedError));
+console.log(JSON.stringify(serialisedError));
 
 // this outputs:
 // {"name": "Error", "message": "This is a test error", "stack": "Error\n   at ..."}
